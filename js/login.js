@@ -1,19 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var loginForm = document.getElementById("loginForm");
-    
-    if (loginForm) {
-        loginForm.addEventListener("submit", function(event) {
-            event.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.getElementById("loginForm");
 
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
+    loginForm.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-            if (username === "gebruiker" && password === "wachtwoord") {
-                alert("Inloggen gelukt!");
-                window.location.href = "./../index.html";
-            } else {
-                alert("Inloggen mislukt. Controleer je gebruikersnaam en wachtwoord.");
-            }
-        });
-    }
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "gebruiker" && password === "wachtwoord") {
+            localStorage.setItem("isLoggedIn", "true");
+
+            window.location.href = "./../index.html";
+        } else {
+            alert("Ongeldige gebruikersnaam of wachtwoord. Probeer opnieuw.");
+        }
+    });
 });

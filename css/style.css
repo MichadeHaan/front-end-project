@@ -4,6 +4,9 @@ body {
     overflow: hidden;
     background-color: #000;
 }
+H1{
+    color: aliceblue;
+}
 #background {
     position: absolute;
     top: 0;

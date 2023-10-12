@@ -16,3 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            var header = document.querySelector('header');
+            if (header.style.transform === 'translateY(-100%)') {
+                header.style.transform = 'translateY(0)';
+            } else {
+                header.style.transform = 'translateY(-100%)';
+            }
+        }
+    });
+});

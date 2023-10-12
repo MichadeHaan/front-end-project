@@ -1,12 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('./../foto\'s/login.jpg');
+    background-image: url('./../foto`s/login.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
 }
 .container {

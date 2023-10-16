@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
 
     if (!isLoggedIn || isLoggedIn !== "true") {
-        window.location.href = "./html/login.html";
+        window.location.href = "/html/login.html";
     }
 
     const logoutButton = document.getElementById("logout");
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             localStorage.removeItem("isLoggedIn");
 
-            window.location.href = "./html/login.html";
+            window.location.href = "/html/login.html";
         });
     }
 });

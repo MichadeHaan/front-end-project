@@ -16,3 +16,28 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const bericht = document.getElementById("bericht").value;
+
+    fetch("./php/jouw-server-script.php", {
+        method: "POST",
+        body: JSON.stringify({ email, bericht }),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert("Bedankt voor je bericht. We nemen zo snel mogelijk contact met je op.");
+        } else {
+            alert("Er is een fout opgetreden. Probeer het later opnieuw.");
+        }
+    });
+});

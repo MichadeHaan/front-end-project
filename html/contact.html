@@ -11,15 +11,16 @@
 
     <div class="container">
         <h2>Stuur je bericht</h2>
-        <form method="post">
+        <form method="post" action="./../php/jouw-server-script.php">
             <label for="email">E-mail:</label>
             <input type="text" id="email" name="email" placeholder="E-mail" required>
-    
+        
             <label for="bericht">Bericht aan customer support:</label>
             <textarea id="bericht" name="bericht" placeholder="Bericht" required></textarea>
-    
+        
             <button type="submit">Verzenden</button>
         </form>
+               
     </div>
 
 </body>

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (username === "gebruiker" && password === "wachtwoord") {
             localStorage.setItem("isLoggedIn", "true");
 
-            window.location.href = "./../index.html";
+            window.location.href = "/index.html";
         } else {
             alert("Ongeldige gebruikersnaam of wachtwoord. Probeer opnieuw.");
         }

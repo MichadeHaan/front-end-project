@@ -6,6 +6,16 @@
     <title>Project</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
+    <script>
+        function showSuccessPopup() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var successParam = urlParams.get('success');
+            
+            if (successParam === 'true') {
+                alert('E-mail is succesvol verzonden. nu kun u verder kijken op ons website');
+            }
+        }
+        </script>        
 </head>
 <body>
    <header>
@@ -19,5 +29,8 @@
            </ul>
        </nav>
    </header>
+   <script>
+    showSuccessPopup();
+</script>       
 </body>
 </html>

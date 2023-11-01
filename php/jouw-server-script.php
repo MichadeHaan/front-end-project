@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->send();
         }
         
-        echo 'E-mails zijn succesvol verzonden.';
+        echo '<script>window.location.href = "/stag%20front-end-project/index.html?success=true";</script>';
     } catch (Exception $e) {
         echo 'Er is een fout opgetreden bij het verzenden van de e-mails: ' . $mail->ErrorInfo;
     }

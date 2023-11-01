@@ -12,13 +12,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.office365.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'shadow26052004@hotmail.com';
-        $mail->Password = 'shadow052004';
+        $mail->Username = 'shadow26052004@hotmail.com'; // je email hotmail
+        $mail->Password = 'shadow052004'; // je email wachtwoord
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         $recipientEmail = $_POST['email'];
-        $mail->setFrom('shadow26052004@hotmail.com', 'Hobart Ankunding');
+        $mail->setFrom('shadow26052004@hotmail.com', 'Hobart Ankunding'); // jou email hotmail en naam
         $mail->addAddress($recipientEmail);
         $mail->Subject = 'E-mail is succesvol verzonden';
         $messageToRecipient = 'Beste klant, we zullen zo snel mogelijk contact met u opnemen.';

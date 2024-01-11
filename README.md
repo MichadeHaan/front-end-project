@@ -1,4 +1,4 @@
-# Projectnaam
+# front-end-project
 
 ## Overzicht
 
@@ -49,7 +49,7 @@ open index.html
 - E-mailsysteemintegratie ([phpmailer])
 
 ## Gebruik
-Druk op "Enter" om het game-menu te openen.
-Navigeer door de opties in het menu.
-Bekijk gamegegevens in kaartvorm.
-Gebruik het e-mailsysteem voor contact.
+- Druk op "Enter" om het game-menu te openen.
+- Navigeer door de opties in het menu.
+- Bekijk gamegegevens in kaartvorm.
+- Gebruik het e-mailsysteem voor contact.

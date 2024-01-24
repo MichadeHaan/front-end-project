@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
-        if (username === "gebruiker" && password === "wachtwoord") {
+        if (username === "Gebruikersnaam" && password === "Wachtwoord") {
             localStorage.setItem("isLoggedIn", "true");
 
             window.location.href = "/stag%20front-end-project/index.html";

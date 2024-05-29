@@ -16,7 +16,7 @@ Dit project is een front-end applicatie met een interactief game-menu en geïnte
 1. Kloon de repository:
 
    ```bash
-   git clone https://github.com/jouw-gebruikersnaam/projectnaam.git
+   git clone https://github.com/MichadeHaan/projectnaam.git
 Open het project in een code-editor.
 
 Start de applicatie:
